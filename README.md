@@ -1,85 +1,136 @@
-![](https://komarev.com/ghpvc/?username=macu-dev&color=blueviolet)
+<div align="center">
 
-<h1 align="center">
-        <samp> Hello World! <img src = "https://raw.githubusercontent.com/rahulbanerjee26/githubProfileReadmeGenerator/main/gifs/wave.gif" width = 50px height='50px'></samp>   
-</h1>
-<h2 align="center">
-        <samp> I'm  Maria Claudia 
-        but my friends call me <b>Macu</b></samp>   
-</h2>
-<p align="center"> 
-  <samp>
-    「 I am a frontend developer from <b>Argentina</b> 」
-    <br>
-  </samp>
-</p>
-
-<p align="center">
-  <img width="150" height="150" src="https://img1.picmix.com/output/stamp/normal/5/5/1/2/2452155_4c539.gif">
-</p>
-
-<br />
-
-<p align="center">
- <a href="https://www.linkedin.com/in/maría-claudia-pérez-escalante-501a62144" target="_blank">
-  <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="macu"/>
- </a>
- <a href="https://twitter.com/https://twitter.com/Magenta_Oreo" target="_blank">
-  <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" />
- </a>
- <a href="https://www.instagram.com/macu.21/" target="_blank">
-  <img src="https://img.shields.io/badge/Instagram-fe4164?style=for-the-badge&logo=instagram&logoColor=white" alt="macu" />
- </a> 
-</p>
-<br />
-
- # About me
--  **Learning :** React Native :zap:
--  **Hobbies :** Read📕, Sing :microphone: and Listen to the music :headphones:
--  **Favorite phrase :**“When you do something noble and beautiful and nobody noticed, do not be sad. For the sun every morning is a beautiful spectacle and yet most       of the audience still sleeps.”- John Lennon
-
-<br/>
-
-## Use To Code
-
-![Javascript](https://img.shields.io/badge/Javascript-F0DB4F?style=for-the-badge&labelColor=black&logo=javascript&logoColor=F0DB4F)
-![Typescript](https://img.shields.io/badge/Typescript-007acc?style=for-the-badge&labelColor=black&logo=typescript&logoColor=007acc)
-![React](https://img.shields.io/badge/-React-61DBFB?style=for-the-badge&labelColor=black&logo=react&logoColor=61DBFB)
-![React Native](https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![Next.js](https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
-![Nodejs](https://img.shields.io/badge/Nodejs-3C873A?style=for-the-badge&labelColor=black&logo=node.js&logoColor=3C873A)
-![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![SASS Badge](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)
-![Tailwind](https://img.shields.io/badge/Tailwind_CSS-092749?style=for-the-badge&logo=tailwindcss&logoColor=06B6D4&labelColor=000000)
-![Markdown](https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white)
-![Redux](https://img.shields.io/badge/Redux-593D88?style=for-the-badge&logo=redux&logoColor=white)
-![React Query](https://img.shields.io/badge/-React_Query-FF4154?style=for-the-badge&logo=react%20query&logoColor=white)
-![VSCode](https://img.shields.io/badge/Visual_Studio-0078d7?style=for-the-badge&logo=visual%20studio&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![Material UI](https://img.shields.io/badge/-MATERIAL%20UI-007FFF?style=for-the-badge&logo=mui&logoColor=white)
-![Jest](https://img.shields.io/badge/-JEST-CB3837?style=for-the-badge&logo=jest&logoColor=white)
-![Cypress](https://img.shields.io/badge/-CYPRESS-181717?style=for-the-badge&logo=cypress&logoColor=white)
-![PHP](https://img.shields.io/badge/-PHP-4F5B93?style=for-the-badge&logo=php&logoColor=white)
-![Laravel](https://img.shields.io/badge/-LARAVEL-f9322c?style=for-the-badge&logo=laravel&logoColor=white)
-![Github](https://img.shields.io/badge/-GITHUB-181717?style=for-the-badge&logo=github&logoColor=white)
-![Bitbucket](https://img.shields.io/badge/-BITBUCKET-0052CC?style=for-the-badge&logo=bitbucket&logoColor=white)
-![NPM](https://img.shields.io/badge/-NPM-CB3837?style=for-the-badge&logo=npm&logoColor=white)
-![Linux](https://img.shields.io/badge/-LINUX-FCC624?style=for-the-badge&logo=linux&logoColor=white)
-![Windows](https://img.shields.io/badge/-WINDOWS-0078D6?style=for-the-badge&logo=windows&logoColor=white)
-![MacOs](https://img.shields.io/badge/-MACOS-000000?style=for-the-badge&logo=macOs&logoColor=white)
-
-<br/>
-
-<a> 
-    <a href="https://github.com/macu-dev"><img alt="Macu's Github Stats" src="https://denvercoder1-github-readme-stats.vercel.app/api?username=macu-dev&show_icons=true&count_private=true&theme=react&border_color=7F3FBF&bg_color=0D1117&title_color=F85D7F&icon_color=F8D866" height="192px" width="49.5%"/></a>
-  <a href="https://github.com/macu-dev"><img alt="Macu's Top Languages" src="https://denvercoder1-github-readme-stats.vercel.app/api/top-langs/?username=macu-dev&langs_count=8&layout=compact&theme=react&border_color=7F3FBF&bg_color=0D1117&title_color=F85D7F&icon_color=F8D866" height="192px" width="49.5%"/></a>
-  <br/>
+<!-- LOCAL CITY-POP BANNER -->
+<a href="https://github.com/macu-dev">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.v9.svg">
+    <source media="(prefers-color-scheme: light)" srcset="assets/banner-light.v9.svg">
+    <img src="assets/banner-light.v9.svg" width="960" alt="Perfil DevOps de María Claudia">
+  </picture>
 </a>
-<br/>
-<br/>
-<br/>
+
+<br>
+
+<a href="https://github.com/macu-dev">
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=26&duration=2600&pause=900&color=F78CA0&center=true&vCenter=true&width=900&lines=Maria+Claudia+%E2%80%94+DevOps+Engineer;Infrastructure+as+Code+%7C+CI%2FCD+%7C+Cloud+Native;Containers+%E2%80%A2+Kubernetes+%E2%80%A2+Observability;Cafe -  Retro - Music - Vibe - Chill - Tecnologia" alt="typing banner">
+</a>
+
+<img src="https://komarev.com/ghpvc/?username=macu-dev&style=flat&color=f78ca0&label=profile+views" alt="profile views">
+
+</div>
+
+---
+
+## `$ whoami`
 
 <p align="center">
-  <img width="200" height="200" src="https://i.pinimg.com/originals/21/f0/92/21f0929a92ebe840eb932af199fb3260.gif">
+  <img src="assets/whoami-citypop.svg" width="960" alt="Terminal city-pop con el perfil de María Claudia, DevOps Engineer">
 </p>
+
+<br>
+
+<div align="center">
+
+## `$ cat tech-stack.yaml`
+
+<table border="1" cellpadding="14" bgcolor="#17171c">
+  <thead>
+    <tr>
+      <th colspan="2" align="left"><code>macu-dev:~$ cat tech-stack.yaml</code></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td width="50%" valign="top"><code>├─ ☁ cloud_infrastructure:</code><br><br>
+        <img src="https://skillicons.dev/icons?i=aws,azure,ansible" alt="AWS, Azure y Ansible"><br>
+        <sub><code>AWS · Azure · Ansible</code></sub>
+      </td>
+      <td width="50%" valign="top"><code>├─ ▣ databases_messaging:</code><br><br>
+        <img src="assets/icon-amazon-rds.svg" height="48" alt="Amazon RDS">
+        <img src="https://skillicons.dev/icons?i=mysql,postgres,mongodb,dynamodb" alt="MySQL, PostgreSQL, MongoDB y DynamoDB"><br>
+        <sub><code>Amazon RDS · MySQL · PostgreSQL · MongoDB · DynamoDB</code></sub>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top"><code>├─ ⚙ containers_ci_cd:</code><br><br>
+        <img src="https://skillicons.dev/icons?i=kubernetes,docker,githubactions,gitlab,bitbucket,bash" alt="Kubernetes, Docker, GitHub Actions, GitLab CI, Bitbucket y Bash"><br>
+        <sub><code>Kubernetes · Docker · GitHub Actions · GitLab CI · Bitbucket · Bash</code></sub>
+      </td>
+      <td valign="top"><code>├─ ◉ monitoring_observability:</code><br><br>
+        <img src="https://skillicons.dev/icons?i=sentry,prometheus" alt="Sentry y Prometheus">
+        <img src="https://cdn.simpleicons.org/datadog/76d8d2?viewbox=auto" height="48" alt="Datadog">
+        <img src="assets/icon-amazon-cloudwatch.svg" height="48" alt="Amazon CloudWatch"><br>
+        <sub><code>Sentry · Prometheus · Datadog · Amazon CloudWatch</code></sub>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top"><code>├─ ✦ languages_frameworks:</code><br><br>
+        <img src="https://skillicons.dev/icons?i=nodejs,javascript,react,nextjs,typescript,python,fastapi" alt="Node.js, JavaScript, React, Next.js, TypeScript, Python y FastAPI"><br>
+        <sub><code>Node.js · JavaScript · React · Next.js · TypeScript · Python · FastAPI</code></sub>
+      </td>
+      <td valign="top"><code>╰─ ⌁ security_iac:</code><br><br>
+        <img src="https://cdn.simpleicons.org/trivy/f3d29b?viewbox=auto" height="48" alt="Trivy">
+        <img src="assets/icon-sonarqube.svg" height="48" alt="SonarQube">
+        <img src="https://skillicons.dev/icons?i=terraform" alt="Terraform">
+        <img src="https://cdn.simpleicons.org/cilium/c7a4f5?viewbox=auto" height="48" alt="Cilium">
+        <img src="https://cdn.simpleicons.org/falco/76d8d2?viewbox=auto" height="48" alt="Falco"><br>
+        <sub><code>Trivy · SonarQube · Terraform · Cilium · Falco</code></sub>
+      </td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td colspan="2"><code>status: ready&nbsp;&nbsp;·&nbsp;&nbsp;environment: production</code></td>
+    </tr>
+  </tfoot>
+</table>
+
+</div>
+
+---
+
+## `$ kubectl get signals --all-namespaces`
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/radar-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="assets/radar-light.svg">
+    <img src="assets/radar-light.svg" width="450" alt="Radar de habilidades DevOps">
+  </picture>&nbsp;
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/radar-langs-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="assets/radar-langs-light.svg">
+    <img src="assets/radar-langs-light.svg" width="430" alt="Radar de lenguajes y scripting">
+  </picture>
+</p>
+
+<p align="center"><sub><code>signals: devops_skill_radar · language_stack_radar · status: healthy</code></sub></p>
+
+---
+
+<!-- SOCIALS -->
+## `$ connect --socials`
+
+<div align="center">
+
+<a href="https://www.instagram.com/diario_devops">
+  <img src="https://img.shields.io/badge/Instagram-f78ca0?style=for-the-badge&logo=instagram&logoColor=1a1a2e" alt="Instagram">
+</a>&nbsp;&nbsp;
+<a href="https://medium.com/@maraclaudiaprezescalante">
+  <img src="https://img.shields.io/badge/Medium-c7a4f5?style=for-the-badge&logo=medium&logoColor=1a1a2e" alt="Medium">
+</a>&nbsp;&nbsp;
+<a href="https://www.linkedin.com/in/mcperezes/">
+  <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
+</a>&nbsp;&nbsp;
+<a href="https://github.com/macu-dev">
+  <img src="https://img.shields.io/badge/GitHub-f78ca?style=for-the-badge&logo=github&logoColor=1a1a221" alt="GitHub">
+</a>
+
+</div>
+
+<br>
+<br>
+
+<div align="center">
+<sub>Hecho con 💖 y mucho cafe desde Rosario, Argentina · @macu-dev</sub>
+</div>
