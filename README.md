@@ -12,7 +12,7 @@
 <br>
 
 <a href="https://github.com/macu-dev">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=26&duration=2600&pause=900&color=F78CA0&center=true&vCenter=true&width=900&lines=Maria+Claudia+%E2%80%94+DevOps+Engineer;Infrastructure+as+Code+%7C+CI%2FCD+%7C+Cloud+Native;Containers+%E2%80%A2+Kubernetes+%E2%80%A2+Observability;Cafe -  Retro - Music - Vibe - Chill - Tecnologia" alt="typing banner">
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&amp;weight=700&amp;size=26&amp;duration=2600&amp;pause=900&amp;color=F78CA0&amp;center=true&amp;vCenter=true&amp;width=900&amp;lines=Maria+Claudia+%E2%80%94+DevOps+Engineer%3BInfrastructure+as+Code+%7C+CI%2FCD+%7C+Cloud+Native%3BContainers+%E2%80%A2+Kubernetes+%E2%80%A2+Observability%3BCafe+-+Retro+-+Music+-+Vibe+-+Chill+-+Tecnologia" alt="Banner animado con perfil DevOps">
 </a>
 
 <img src="https://komarev.com/ghpvc/?username=macu-dev&style=flat&color=f78ca0&label=profile+views" alt="profile views">
@@ -95,12 +95,12 @@
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/radar-dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="assets/radar-light.svg">
-    <img src="assets/radar-light.svg" width="450" alt="Radar de habilidades DevOps">
+    <img src="assets/radar-light.svg" width="390" alt="Radar de habilidades DevOps">
   </picture>&nbsp;
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/radar-langs-dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="assets/radar-langs-light.svg">
-    <img src="assets/radar-langs-light.svg" width="430" alt="Radar de lenguajes y scripting">
+    <img src="assets/radar-langs-light.svg" width="370" alt="Radar de lenguajes y scripting">
   </picture>
 </p>
 
