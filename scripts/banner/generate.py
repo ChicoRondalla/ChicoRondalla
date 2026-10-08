@@ -38,22 +38,18 @@ PREFERRED_LOGO_ORDER = ("linux", "kubernetes")
 
 YAML_ROWS = [
     (0, "profile", ""),
-    (1, "subject", "Maria Claudia"),
-    (1, "role", "DevOps Engineer"),
-    (1, "origin", "Rosario, Argentina"),
-    (1, "focus", "CI/CD · Cloud Native · IaC"),
-    (1, "status", "Automatizacion · Escalado · Despliegue"),
-    (1, "toolchain", "Terraform · Helm · GitHub Actions"),
+    (1, "subject", "Oz Dev"),
+    (1, "role", "Computer Science Student"),
+    (1, "origin", "Mexico City"),
+    (1, "focus", "Ingeniería de Software · Desarrollo Backend"),
     (0, "stack", ""),
-    (1, "cloud", "AWS · Azure"),
-    (1, "containers", "Kubernetes · Docker · Helm"),
-    (1, "iac", "Terraform · Ansible"),
-    (1, "observability", "Prometheus · Datadog · Sentry"),
-    (1, "automation", "Python · Bash · JavaScript"),
+    (1, "languages", "C · C++ · Java · JavaScript · HTML · CSS · Python"),
+    (1, "core_concepts", "Manejo de Memoria · Apuntadores · Programación Concurrente"),
+    (1, "methodologies", "Scrum · Agile · Product Backlogs · Kanban"),
     (0, "contact", ""),
-    (1, "linkedin", "/in/mcperezes"),
-    (1, "github", "macu-dev"),
-    (1, "timezone", "UTC-3 · Rosario"),
+    (1, "linkedin", "/in/cesar-vazquez-dev"),
+    (1, "github", "ChicoRondalla"),
+    (1, "timezone", "UTC-6 · Mexico City"),
 ]
 
 THEMES = {
@@ -109,13 +105,9 @@ def normalize_logo(image: Image.Image) -> Image.Image:
     icon = image.convert("RGBA")
     alpha = icon.getchannel("A")
     if alpha.getextrema() == (255, 255):
-        # Remove only light pixels connected to the canvas edge. This keeps light
-        # details enclosed by a dark outline (for example, Linux's belly) opaque.
         gray = np.asarray(ImageOps.grayscale(icon))
         background = edge_connected(gray >= 220)
         visible = ~background
-        # Close tiny anti-aliased gaps in the outline, then fill enclosed light
-        # areas so an opaque source becomes a complete single-colour silhouette.
         visible = np.asarray(
             Image.fromarray((visible * 255).astype("uint8"))
             .filter(ImageFilter.MaxFilter(3))
@@ -183,7 +175,6 @@ def floyd_steinberg(gray: np.ndarray) -> np.ndarray:
 def portrait_points(theme: str, rng: np.random.Generator) -> np.ndarray:
     """Return sampled x/y banner coordinates from a 300x340 dither grid."""
     source = Image.open(SOURCE).convert("RGBA")
-    # Tighter head + shoulders crop so face detail fills the VISUAL.MAP frame.
     w, h = source.size
     crop_w = int(w * 0.60)
     crop_h = int(crop_w * (340 / 300))
@@ -193,7 +184,6 @@ def portrait_points(theme: str, rng: np.random.Generator) -> np.ndarray:
     rgb = crop.convert("RGB")
     alpha = np.asarray(crop.getchannel("A"), dtype=np.float32) / 255.0
 
-    # Put the portrait over a solid background to process lighting
     if theme == "dark":
         bg = Image.new("RGBA", crop.size, "black")
         bg.alpha_composite(crop)
@@ -218,7 +208,6 @@ def portrait_points(theme: str, rng: np.random.Generator) -> np.ndarray:
     if theme == "dark":
         active &= alpha > 0.08
 
-    # Keep the full 300×340 lattice — skipping 2×2 cells was the soft/blurry look.
     ys, xs = np.where(active)
     if len(xs) == 0:
         return np.zeros((0, 2), dtype=np.float32)
@@ -320,8 +309,6 @@ def render_svg(
         current = transport(current, points[:n])
         targets.append(current)
 
-    # Three seconds of portrait, then transitions and full-logo holds. Returning
-    # to the portrait keeps the loop seamless.
     times = [0.0, 3.0]
     frames = [source, source]
     for target in targets:
@@ -338,7 +325,7 @@ def render_svg(
         '<svg xmlns="http://www.w3.org/2000/svg" '
         f'width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" '
         'aria-labelledby="title desc">',
-        "<title id=\"title\">Maria Claudia's live system profile</title>",
+        "<title id=\"title\">Oz Dev's live system profile</title>",
         '<desc id="desc">Animated terminal profile with a dithered portrait and '
         "DevOps tool silhouettes.</desc>",
         "<defs>",
@@ -361,7 +348,6 @@ def render_svg(
         f'<text x="590" y="43" text-anchor="middle" fill="{t["muted"]}" '
         'font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="13" '
         'letter-spacing=".4">vim profile.yml</text>',
-        # Left visual frame.
         f'<rect x="35" y="88" width="418" height="472" rx="6" fill="{t["panel2"]}" '
         f'stroke="{t["line"]}"/>',
         f'<path d="M35 124H453" stroke="{t["line"]}"/>',
@@ -373,12 +359,9 @@ def render_svg(
         f'<path d="M49 141h12M49 141v12M439 141h-12M439 141v12M49 539h12M49 539v-12'
         f'M439 539h-12M439 539v-12" fill="none" stroke="{t["chrome"]}" opacity=".55"/>',
         '<g clip-path="url(#visualClip)" shape-rendering="crispEdges">',
-        # Loop layer stays visible at t=0 so camo/static first frames still show the face.
-        # Intro duplicate below shimmers on top, then hands off at 3.2s.
         '<g opacity="1">',
     ]
 
-    # Dense portrait drift moves toward the first logo in the current sequence.
     first_centroid = targets[0].mean(axis=0)
     band_ids = rng.integers(0, 94, size=len(portrait))
     noise = rng.normal(0, 4, size=(94, 2))
@@ -408,7 +391,6 @@ def render_svg(
             f'values="{drift_opacity_values}"/></path>'
         )
 
-    # Optimal-transport travellers, represented as tiny path squares (never glyphs).
     for i in range(n):
         positions = animate_values(frames, i)
         parts.append(
@@ -421,8 +403,6 @@ def render_svg(
             f'values="{opacity_values}"/></path>'
         )
 
-    # Travellers give the transition its motion. A denser particle cloud takes
-    # over when they arrive, preserving the dithered look during each logo hold.
     for index, (name, particles) in enumerate(logo_hold_particles.items()):
         visible = ["0"] * len(frames)
         visible[index * 2 + 2] = ".82"
@@ -436,7 +416,6 @@ def render_svg(
         )
     parts.append("</g>")
 
-    # One-shot scattered intro: sixty random, interleaved point groups.
     intro_ids = rng.integers(0, 60, size=len(portrait))
     order = rng.permutation(60)
     starts = np.empty(60)
@@ -456,11 +435,9 @@ def render_svg(
     parts.extend(
         [
             "</g>",
-            # Small frame telemetry.
             f'<text x="58" y="551" fill="{t["muted"]}" '
             'font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="10">'
             f'PTS {len(portrait):05d} · FS/SERPENTINE</text>',
-            # Right information panel (Vim YAML editor view).
             f'<rect x="474" y="88" width="672" height="472" rx="6" fill="{t["panel2"]}" '
             f'stroke="{t["line"]}"/>',
             f'<path d="M474 124H1146" stroke="{t["line"]}"/>',
@@ -473,7 +450,7 @@ def render_svg(
             f'stroke="{t["chrome"]}"/>',
             f'<text x="1062" y="111" text-anchor="middle" fill="{t["chrome"]}" '
             'font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="13" '
-            'font-weight="700">@macu-dev</text>',
+            'font-weight="700">@ChicoRondalla</text>',
         ]
     )
 
@@ -502,7 +479,6 @@ def render_svg(
         )
         row_y += 21.5
 
-    # Vim status line at bottom of panel
     parts.extend(
         [
             f'<path d="M474 526H1146" stroke="{t["line"]}"/>',
